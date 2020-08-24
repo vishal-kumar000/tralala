@@ -1,0 +1,173 @@
+body,html{
+    background-image: url("https://images.unsplash.com/photo-1536267933728-f5cffe426327?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color:lightyellow;
+}
+.bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: rgba( 64, 144, 172, 0.65 );
+    color:white;
+    
+}
+* {
+    box-sizing: border-box;
+}
+.menu {
+    justify-content: flex-start;
+}
+.menu-input {
+    width: none;
+    padding: 0em;
+    justify-content: space-around;
+}
+.bar > * {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bar .menu-input {
+    background-color: transparent;
+    padding: 0;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.bar .menu > *, .bar .more > * {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 1px;
+    margin: 0px 4px;
+    background-color: rgba( 64, 144, 172, 1 );
+}
+ul {
+    list-style: none;
+}
+.pointer {
+    cursor: pointer;
+}
+.title {
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+}
+.more {
+    justify-content: flex-end;
+}
+
+.bar .more{
+    
+    padding: 5px;
+    border-radius: 1px;
+    margin: 0px 5px;
+}
+.board {
+    display: flex;
+    height: 80vh;
+    overflow-y: hidden;
+}
+.board-menu {
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+    background-color: rgba( 200, 180, 200, 0.25 );
+    color: white;
+}
+.disp {
+    display: flex;
+    height: max-content;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin-top: 20px;
+    padding: 84px 20px 20px;
+}
+.task-name {
+    flex-shrink: 0;
+    flex-basis: 240px;
+    max-height: 100%;
+    overflow: hidden;
+}
+.task-list {
+    width: 210px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgba( 240, 240, 240, 0.9 );
+}
+.task-list-title-name {
+    display: flex;
+    justify-content: space-between;
+}
+.task-list-title {
+    margin: 4px;
+    font-weight: bold;
+}
+.task-list-more {
+    margin: 0 4px;
+}
+.task-list .task, .task-list input, .task-list textarea, .task-list button {
+    border-radius: 4px;
+}
+.task .task-edit {
+    float: right;
+    display: none;
+}
+.task {
+    padding: 10px;
+    margin: 10px ;
+    background-color: white;
+}
+.width {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-size: 1em;
+    resize: none;
+}
+.task-list .task .task-list input .task-list textarea .task-list button {
+    border-radius: 4px;
+}
+.add-card-form-actions, .add-list-form-actions {
+    margin: 10px 0;
+}
+.btn-primary {
+    background-color: red;
+    color: white;
+    font-size: 1.3em;
+}
+.btn-inline {
+    display: inline-block;
+    width: auto;
+}
+
+.add-card-cancel .add-list-cancel {
+    position: relative;
+    top: 4px;
+} 
+.pointer:hover {
+    background-color:rgba(154, 151, 229, 0.329)
+}
+.task i{
+    display: none;
+}
+.task:hover i {
+    display: block;
+}
